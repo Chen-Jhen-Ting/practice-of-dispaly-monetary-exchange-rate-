@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國際主要國家貨幣每月匯率概況</title>
+    <style>
+      div{
+        width: auto ;
+        align-self: center;
+      }
+      h1{ 
+        color: black;
+        background-color: cornsilk;
+        margin: auto;
+        font-size: 40px;
+        padding: 6px;
+        text-align: center;
+      }
+      span{
+        font-size: 20px;
+        font-style: oblique;
+      }
+      table{
+        border: gray solid 2px;
+        width: 100%;
+        height: 60px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      th{
+        color: gray;
+        font-size: 15px;
+        text-align: center;
+        border: 1px solid black
+      }
+      td{
+        color: red;
+        font-size: 15px;
+        text-align: center;
+        border: 1px solid black
+      }
+
+      footer{
+        background-color: cornsilk;
+        font-size: 20px;
+      }
+      a{
+        text-decoration: none;
+        color: blue;
+        background-color:cornsilk ;
+        transition: 0.5s;
+        }
+
+      a:hover{
+        background-color: chartreuse;
+      }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>國際主要國家貨幣每月匯率概況</h1>  
+        <hr>
+        <span>月別 <%= @new[12]["月別"] %></span>
+        <table>
+            <thead>
+               <tr>
+                <th>幣別</th>
+                <th><%= @monetary[1] %></th>
+                <th><%= @monetary[2] %></th>
+                <th><%= @monetary[3] %></th>
+                <th><%= @monetary[4] %></th>
+                <th><%= @monetary[5] %></th>
+                <th><%= @monetary[6] %></th>
+                <th><%= @monetary[7] %></th>
+                <th><%= @monetary[8] %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>匯率</td>
+                <td><%= @new[12][@monetary[1]]%></td>
+                <td><%= @new[12][@monetary[2]]%></td>
+                <td><%= @new[12][@monetary[3]]%></td>
+                <td><%= @new[12][@monetary[4]]%></td>
+                <td><%= @new[12][@monetary[5]]%></td>
+                <td><%= @new[12][@monetary[6]]%></td>
+                <td><%= @new[12][@monetary[7]]%></td>
+                <td><%= @new[12][@monetary[8]]%></td>
+              </tr>
+            </tbody>
+        </table><br>
+        
+
+        <span>月別 <%= @new[11]["月別"] %></span>
+        <table>
+            <thead>
+               <tr>
+                <th>幣別</th>
+                <th><%= @monetary[1] %></th>
+                <th><%= @monetary[2] %></th>
+                <th><%= @monetary[3] %></th>
+                <th><%= @monetary[4] %></th>
+                <th><%= @monetary[5] %></th>
+                <th><%= @monetary[6] %></th>
+                <th><%= @monetary[7] %></th>
+                <th><%= @monetary[8] %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>匯率</td>
+                <td><%= @new[11][@monetary[1]]%></td>
+                <td><%= @new[11][@monetary[2]]%></td>
+                <td><%= @new[11][@monetary[3]]%></td>
+                <td><%= @new[11][@monetary[4]]%></td>
+                <td><%= @new[11][@monetary[5]]%></td>
+                <td><%= @new[11][@monetary[6]]%></td>
+                <td><%= @new[11][@monetary[7]]%></td>
+                <td><%= @new[11][@monetary[8]]%></td>
+              </tr>
+            </tbody>
+        </table><br>
+
+        <span>月別 <%= @new[10]["月別"] %></span>
+        <table>
+            <thead>
+               <tr>
+                <th>幣別</th>
+                <th><%= @monetary[1] %></th>
+                <th><%= @monetary[2] %></th>
+                <th><%= @monetary[3] %></th>
+                <th><%= @monetary[4] %></th>
+                <th><%= @monetary[5] %></th>
+                <th><%= @monetary[6] %></th>
+                <th><%= @monetary[7] %></th>
+                <th><%= @monetary[8] %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>匯率</td>
+                <td><%= @new[10][@monetary[1]]%></td>
+                <td><%= @new[10][@monetary[2]]%></td>
+                <td><%= @new[10][@monetary[3]]%></td>
+                <td><%= @new[10][@monetary[4]]%></td>
+                <td><%= @new[10][@monetary[5]]%></td>
+                <td><%= @new[10][@monetary[6]]%></td>
+                <td><%= @new[10][@monetary[7]]%></td>
+                <td><%= @new[10][@monetary[8]]%></td>
+              </tr>
+            </tbody>
+        </table><br>
+
+        <span>月別 <%= @new[9]["月別"] %></span>
+        <table>
+            <thead>
+               <tr>
+                <th>幣別</th>
+                <th><%= @monetary[1] %></th>
+                <th><%= @monetary[2] %></th>
+                <th><%= @monetary[3] %></th>
+                <th><%= @monetary[4] %></th>
+                <th><%= @monetary[5] %></th>
+                <th><%= @monetary[6] %></th>
+                <th><%= @monetary[7] %></th>
+                <th><%= @monetary[8] %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>匯率</td>
+                <td><%= @new[9][@monetary[1]]%></td>
+                <td><%= @new[9][@monetary[2]]%></td>
+                <td><%= @new[9][@monetary[3]]%></td>
+                <td><%= @new[9][@monetary[4]]%></td>
+                <td><%= @new[9][@monetary[5]]%></td>
+                <td><%= @new[9][@monetary[6]]%></td>
+                <td><%= @new[9][@monetary[7]]%></td>
+                <td><%= @new[9][@monetary[8]]%></td>
+              </tr>
+            </tbody>
+        </table><br>
+
+        <span>月別 <%= @new[8]["月別"] %></span>
+        <table>
+            <thead>
+               <tr>
+                <th>幣別</th>
+                <th><%= @monetary[1] %></th>
+                <th><%= @monetary[2] %></th>
+                <th><%= @monetary[3] %></th>
+                <th><%= @monetary[4] %></th>
+                <th><%= @monetary[5] %></th>
+                <th><%= @monetary[6] %></th>
+                <th><%= @monetary[7] %></th>
+                <th><%= @monetary[8] %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>匯率</td>
+                <td><%= @new[8][@monetary[1]]%></td>
+                <td><%= @new[8][@monetary[2]]%></td>
+                <td><%= @new[8][@monetary[3]]%></td>
+                <td><%= @new[8][@monetary[4]]%></td>
+                <td><%= @new[8][@monetary[5]]%></td>
+                <td><%= @new[8][@monetary[6]]%></td>
+                <td><%= @new[8][@monetary[7]]%></td>
+                <td><%= @new[8][@monetary[8]]%></td>
+              </tr>
+            </tbody>
+        </table><br>
+
+        <span>月別 <%= @new[7]["月別"] %></span>
+        <table>
+            <thead>
+               <tr>
+                <th>幣別</th>
+                <th><%= @monetary[1] %></th>
+                <th><%= @monetary[2] %></th>
+                <th><%= @monetary[3] %></th>
+                <th><%= @monetary[4] %></th>
+                <th><%= @monetary[5] %></th>
+                <th><%= @monetary[6] %></th>
+                <th><%= @monetary[7] %></th>
+                <th><%= @monetary[8] %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>匯率</td>
+                <td><%= @new[7][@monetary[1]]%></td>
+                <td><%= @new[7][@monetary[2]]%></td>
+                <td><%= @new[7][@monetary[3]]%></td>
+                <td><%= @new[7][@monetary[4]]%></td>
+                <td><%= @new[7][@monetary[5]]%></td>
+                <td><%= @new[7][@monetary[6]]%></td>
+                <td><%= @new[7][@monetary[7]]%></td>
+                <td><%= @new[7][@monetary[8]]%></td>
+              </tr>
+            </tbody>
+        </table><br>
+
+        <span>月別 <%= @new[6]["月別"] %></span>
+        <table>
+            <thead>
+               <tr>
+                <th>幣別</th>
+                <th><%= @monetary[1] %></th>
+                <th><%= @monetary[2] %></th>
+                <th><%= @monetary[3] %></th>
+                <th><%= @monetary[4] %></th>
+                <th><%= @monetary[5] %></th>
+                <th><%= @monetary[6] %></th>
+                <th><%= @monetary[7] %></th>
+                <th><%= @monetary[8] %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>匯率</td>
+                <td><%= @new[6][@monetary[1]]%></td>
+                <td><%= @new[6][@monetary[2]]%></td>
+                <td><%= @new[6][@monetary[3]]%></td>
+                <td><%= @new[6][@monetary[4]]%></td>
+                <td><%= @new[6][@monetary[5]]%></td>
+                <td><%= @new[6][@monetary[6]]%></td>
+                <td><%= @new[6][@monetary[7]]%></td>
+                <td><%= @new[6][@monetary[8]]%></td>
+              </tr>
+            </tbody>
+        </table><br>
+
+        <span>月別 <%= @new[5]["月別"] %></span>
+        <table>
+            <thead>
+               <tr>
+                <th>幣別</th>
+                <th><%= @monetary[1] %></th>
+                <th><%= @monetary[2] %></th>
+                <th><%= @monetary[3] %></th>
+                <th><%= @monetary[4] %></th>
+                <th><%= @monetary[5] %></th>
+                <th><%= @monetary[6] %></th>
+                <th><%= @monetary[7] %></th>
+                <th><%= @monetary[8] %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>匯率</td>
+                <td><%= @new[5][@monetary[1]]%></td>
+                <td><%= @new[5][@monetary[2]]%></td>
+                <td><%= @new[5][@monetary[3]]%></td>
+                <td><%= @new[5][@monetary[4]]%></td>
+                <td><%= @new[5][@monetary[5]]%></td>
+                <td><%= @new[5][@monetary[6]]%></td>
+                <td><%= @new[5][@monetary[7]]%></td>
+                <td><%= @new[5][@monetary[8]]%></td>
+              </tr>
+            </tbody>
+        </table><br>
+
+        <span>月別 <%= @new[4]["月別"] %></span>
+        <table>
+            <thead>
+               <tr>
+                <th>幣別</th>
+                <th><%= @monetary[1] %></th>
+                <th><%= @monetary[2] %></th>
+                <th><%= @monetary[3] %></th>
+                <th><%= @monetary[4] %></th>
+                <th><%= @monetary[5] %></th>
+                <th><%= @monetary[6] %></th>
+                <th><%= @monetary[7] %></th>
+                <th><%= @monetary[8] %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>匯率</td>
+                <td><%= @new[4][@monetary[1]]%></td>
+                <td><%= @new[4][@monetary[2]]%></td>
+                <td><%= @new[4][@monetary[3]]%></td>
+                <td><%= @new[4][@monetary[4]]%></td>
+                <td><%= @new[4][@monetary[5]]%></td>
+                <td><%= @new[4][@monetary[6]]%></td>
+                <td><%= @new[4][@monetary[7]]%></td>
+                <td><%= @new[4][@monetary[8]]%></td>
+              </tr>
+            </tbody>
+        </table><br>
+
+        <span>月別 <%= @new[3]["月別"] %></span>
+        <table>
+            <thead>
+               <tr>
+                <th>幣別</th>
+                <th><%= @monetary[1] %></th>
+                <th><%= @monetary[2] %></th>
+                <th><%= @monetary[3] %></th>
+                <th><%= @monetary[4] %></th>
+                <th><%= @monetary[5] %></th>
+                <th><%= @monetary[6] %></th>
+                <th><%= @monetary[7] %></th>
+                <th><%= @monetary[8] %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>匯率</td>
+                <td><%= @new[3][@monetary[1]]%></td>
+                <td><%= @new[3][@monetary[2]]%></td>
+                <td><%= @new[3][@monetary[3]]%></td>
+                <td><%= @new[3][@monetary[4]]%></td>
+                <td><%= @new[3][@monetary[5]]%></td>
+                <td><%= @new[3][@monetary[6]]%></td>
+                <td><%= @new[3][@monetary[7]]%></td>
+                <td><%= @new[3][@monetary[8]]%></td>
+              </tr>
+            </tbody>
+        </table><br>
+
+        <span>月別 <%= @new[2]["月別"] %></span>
+        <table>
+            <thead>
+               <tr>
+                <th>幣別</th>
+                <th><%= @monetary[1] %></th>
+                <th><%= @monetary[2] %></th>
+                <th><%= @monetary[3] %></th>
+                <th><%= @monetary[4] %></th>
+                <th><%= @monetary[5] %></th>
+                <th><%= @monetary[6] %></th>
+                <th><%= @monetary[7] %></th>
+                <th><%= @monetary[8] %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>匯率</td>
+                <td><%= @new[2][@monetary[1]]%></td>
+                <td><%= @new[2][@monetary[2]]%></td>
+                <td><%= @new[2][@monetary[3]]%></td>
+                <td><%= @new[2][@monetary[4]]%></td>
+                <td><%= @new[2][@monetary[5]]%></td>
+                <td><%= @new[2][@monetary[6]]%></td>
+                <td><%= @new[2][@monetary[7]]%></td>
+                <td><%= @new[2][@monetary[8]]%></td>
+              </tr>
+            </tbody>
+        </table><br>
+
+        <span>月別 <%= @new[1]["月別"] %></span>
+        <table>
+            <thead>
+               <tr>
+                <th>幣別</th>
+                <th><%= @monetary[1] %></th>
+                <th><%= @monetary[2] %></th>
+                <th><%= @monetary[3] %></th>
+                <th><%= @monetary[4] %></th>
+                <th><%= @monetary[5] %></th>
+                <th><%= @monetary[6] %></th>
+                <th><%= @monetary[7] %></th>
+                <th><%= @monetary[8] %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>匯率</td>
+                <td><%= @new[1][@monetary[1]]%></td>
+                <td><%= @new[1][@monetary[2]]%></td>
+                <td><%= @new[1][@monetary[3]]%></td>
+                <td><%= @new[1][@monetary[4]]%></td>
+                <td><%= @new[1][@monetary[5]]%></td>
+                <td><%= @new[1][@monetary[6]]%></td>
+                <td><%= @new[1][@monetary[7]]%></td>
+                <td><%= @new[1][@monetary[8]]%></td>
+              </tr>
+            </tbody>
+        </table><br>
+
+        <span>月別 <%= @new[0]["月別"] %></span>
+        <table>
+            <thead>
+               <tr>
+                <th>幣別</th>
+                <th><%= @monetary[1] %></th>
+                <th><%= @monetary[2] %></th>
+                <th><%= @monetary[3] %></th>
+                <th><%= @monetary[4] %></th>
+                <th><%= @monetary[5] %></th>
+                <th><%= @monetary[6] %></th>
+                <th><%= @monetary[7] %></th>
+                <th><%= @monetary[8] %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>匯率</td>
+                <td><%= @new[0][@monetary[1]]%></td>
+                <td><%= @new[0][@monetary[2]]%></td>
+                <td><%= @new[0][@monetary[3]]%></td>
+                <td><%= @new[0][@monetary[4]]%></td>
+                <td><%= @new[0][@monetary[5]]%></td>
+                <td><%= @new[0][@monetary[6]]%></td>
+                <td><%= @new[0][@monetary[7]]%></td>
+                <td><%= @new[0][@monetary[8]]%></td>
+              </tr>
+            </tbody>
+        </table><br>
+        <footer>
+            <p>資料來源 ： 
+                <a href="https://data.gov.tw/dataset/31897" target="_blank">政府資料開放平臺</a>
+            </p>
+        </footer>
+    </div> 
+</body>
+</html>
